@@ -8,7 +8,7 @@ public class WindowedFullscreenConfig extends Config {
     public WindowedFullscreenConfig() {
         super(WindowedFullscreen.ID + ".json", WindowedFullscreen.NAME, Category.QOL);
 
-        loadFrom("patcher.toml")
+        loadFrom("patcher.toml");
     }
 
     @Switch(
