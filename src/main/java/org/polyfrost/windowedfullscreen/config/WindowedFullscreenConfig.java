@@ -7,6 +7,8 @@ import org.polyfrost.oneconfig.api.config.v1.annotations.Switch;
 public class WindowedFullscreenConfig extends Config {
     public WindowedFullscreenConfig() {
         super(WindowedFullscreen.ID + ".json", WindowedFullscreen.NAME, Category.QOL);
+
+        loadFrom("patcher.toml")
     }
 
     @Switch(
